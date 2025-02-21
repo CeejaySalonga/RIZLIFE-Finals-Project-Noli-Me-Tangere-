@@ -280,7 +280,7 @@
 }
 
 .dropdown-content {
-    display: none;
+    display: none; /* Initially hidden */
     position: absolute;
     top: 100%;
     left: 0;
@@ -291,15 +291,21 @@
     padding: 0.8rem 0;
     z-index: 101;
     transform: translateY(10px);
-    opacity: 0;
-    transition: all 0.3s ease;
+    opacity: 0; /* Start as invisible */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Add transition for opacity and visibility */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+.dropdown:hover .dropdown-content,
+.dropdown.active .dropdown-content {
+    display: block; /* Show dropdown on hover */
+    opacity: 1; /* Fully visible */
+    visibility: visible; /* Ensure visibility */
+}
+
+/* Ensure the dropdown stays open when hovering over it */
 .dropdown:hover .dropdown-content {
-    display: block;
-    transform: translateY(5px);
-    opacity: 1;
+    visibility: visible; /* Show when hovered */
 }
 
 /* Style dropdown links */
@@ -363,11 +369,6 @@
         padding: 0.8rem 1rem;
     }
 
-    .dropdown-content a:hover {
-        background-color: #E2A946;
-        padding-left: 1.3rem;
-    }
-
     /* Rotate arrow for mobile */
     .dropdown.active > a::before {
         transform: rotate(180deg);
@@ -377,4 +378,8 @@
         background-color: #931C19;
         color: white !important;
     }
+}
+
+.navbar .dropdown-menu.show .dropdown-item.active {
+    color: white; /* Set text color to white when active */
 }

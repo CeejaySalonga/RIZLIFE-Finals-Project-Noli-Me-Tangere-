@@ -32,6 +32,13 @@ document.addEventListener('click', (e) => {
         navbarToggle.classList.remove('active');
         navbarMenu.classList.remove('active');
     }
+    
+    // Close dropdown if clicking outside
+    document.querySelectorAll('.dropdown').forEach(dropdown => {
+        if (!dropdown.contains(e.target)) {
+            dropdown.classList.remove('active');
+        }
+    });
 });
 
 // Add scroll event listener
@@ -43,10 +50,52 @@ handleScroll();
 // Add dropdown functionality for mobile
 document.querySelectorAll('.dropdown > a').forEach(dropdownToggle => {
     dropdownToggle.addEventListener('click', (e) => {
-        if (window.innerWidth <= 991) {
-            e.preventDefault();
-            const dropdown = dropdownToggle.parentElement;
-            dropdown.classList.toggle('active');
+        const dropdown = dropdownToggle.parentElement;
+        dropdown.classList.toggle('active'); // Toggle the dropdown visibility
+    });
+
+    // Add mouseenter and mouseleave events to keep dropdown open
+    dropdownToggle.addEventListener('mouseenter', () => {
+        const dropdown = dropdownToggle.parentElement;
+        dropdown.classList.add('active'); // Keep dropdown open on hover
+    });
+
+    let timeout; // Variable to hold the timeout ID
+
+    dropdownToggle.addEventListener('mouseleave', () => {
+        const dropdown = dropdownToggle.parentElement;
+        timeout = setTimeout(() => {
+            dropdown.classList.remove('active'); // Remove active class after delay
+        }, 300); // Adjust delay time as needed (300ms here)
+    });
+
+    // Ensure dropdown stays open when hovering over the dropdown itself
+    const dropdownMenu = dropdownToggle.parentElement.querySelector('.dropdown-menu'); // Adjust selector as needed
+    dropdownMenu.addEventListener('mouseenter', () => {
+        const dropdown = dropdownToggle.parentElement;
+        clearTimeout(timeout); // Clear the timeout to prevent closing
+        dropdown.classList.add('active'); // Keep dropdown open on hover
+    });
+
+    dropdownMenu.addEventListener('mouseleave', () => {
+        const dropdown = dropdownToggle.parentElement;
+        timeout = setTimeout(() => {
+            dropdown.classList.remove('active'); // Remove active class after delay
+        }, 300); // Adjust delay time as needed (300ms here)
+    });
+});
+
+// Ensure dropdown closes when clicking outside
+document.addEventListener('click', (e) => {
+    if (!navbarToggle.contains(e.target) && !navbarMenu.contains(e.target)) {
+        navbarToggle.classList.remove('active');
+        navbarMenu.classList.remove('active');
+    }
+    
+    // Close dropdown if clicking outside
+    document.querySelectorAll('.dropdown').forEach(dropdown => {
+        if (!dropdown.contains(e.target)) {
+            dropdown.classList.remove('active');
         }
     });
 }); 
