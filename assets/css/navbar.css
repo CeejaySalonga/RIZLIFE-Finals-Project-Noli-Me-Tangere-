@@ -280,7 +280,7 @@
 }
 
 .dropdown-content {
-    display: none; /* Initially hidden */
+    display: none; /* Hide dropdown by default */
     position: absolute;
     top: 100%;
     left: 0;
@@ -296,16 +296,9 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.dropdown:hover .dropdown-content,
-.dropdown.active .dropdown-content {
-    display: block; /* Show dropdown on hover */
-    opacity: 1; /* Fully visible */
-    visibility: visible; /* Ensure visibility */
-}
-
-/* Ensure the dropdown stays open when hovering over it */
-.dropdown:hover .dropdown-content {
-    visibility: visible; /* Show when hovered */
+.dropdown-content.show {
+    display: block; /* Show dropdown when 'show' class is added */
+    opacity: 1; /* Make it visible */
 }
 
 /* Style dropdown links */
@@ -380,6 +373,49 @@
     }
 }
 
-.navbar .dropdown-menu.show .dropdown-item.active {
-    color: white; /* Set text color to white when active */
+/* Style for the dropdown button to match other navbar links */
+.dropdown > button {
+    background: none; /* Remove default button background */
+    border: none; /* Remove default button border */
+    color: white; /* Match text color with other links */
+    text-decoration: none; /* Remove underline by default */
+    font-size: 0.9rem; /* Match font size with other links */
+    text-transform: uppercase; /* Make text uppercase */
+    letter-spacing: 1px; /* Match letter spacing */
+    cursor: pointer; /* Change cursor to pointer */
+    position: relative; /* Position relative for underline effect */
+    padding-bottom: 5px; /* Add padding to match other links */
+}
+
+/* Change button color to black when scrolled */
+.navbar.scrolled .dropdown > button {
+    color: black; /* Change text color to black */
+}
+
+/* Add underline effect on hover */
+.dropdown > button::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; /* Match the height of the underline with other links */
+    bottom: 0; /* Position the underline at the bottom of the button */
+    left: 0;
+    background-color: white; /* Default white underline */
+    transition: width 0.3s ease, background-color 0.3s ease; /* Transition for underline effect */
+}
+
+/* Show underline on hover */
+.dropdown > button:hover::after {
+    width: 100%; /* Show underline on hover */
+}
+
+/* Change underline to black when scrolled */
+.navbar.scrolled .dropdown > button::after {
+    background-color: #000000; /* Change underline color when scrolled */
+}
+
+/* Ensure active state is styled */
+.dropdown > button.active::after {
+    width: 100%; /* Show underline when active */
+    background-color: #000000; /* Change underline color when active */
 }

@@ -62,13 +62,6 @@ document.querySelectorAll('.dropdown > a').forEach(dropdownToggle => {
 
     let timeout; // Variable to hold the timeout ID
 
-    dropdownToggle.addEventListener('mouseleave', () => {
-        const dropdown = dropdownToggle.parentElement;
-        timeout = setTimeout(() => {
-            dropdown.classList.remove('active'); // Remove active class after delay
-        }, 300); // Adjust delay time as needed (300ms here)
-    });
-
     // Ensure dropdown stays open when hovering over the dropdown itself
     const dropdownMenu = dropdownToggle.parentElement.querySelector('.dropdown-menu'); // Adjust selector as needed
     dropdownMenu.addEventListener('mouseenter', () => {
@@ -98,4 +91,49 @@ document.addEventListener('click', (e) => {
             dropdown.classList.remove('active');
         }
     });
-}); 
+});
+
+// Add event listener for the Work button
+const workButton = document.querySelector('.dropdown > button');
+const dropdownContent = document.querySelector('.dropdown-content');
+
+let timeout; // Variable to hold the timeout ID
+
+workButton.addEventListener('click', (e) => {
+    e.stopPropagation(); // Prevent event from bubbling up to document
+    dropdownContent.classList.toggle('show');
+});
+
+// Close dropdown when mouse leaves the button
+workButton.addEventListener('mouseleave', () => {
+    timeout = setTimeout(() => {
+        dropdownContent.classList.remove('show'); // Hide dropdown when mouse leaves
+    }, 200); // Adjust delay time as needed (200ms here)
+});
+
+// Ensure dropdown closes when mouse leaves the dropdown content
+dropdownContent.addEventListener('mouseleave', () => {
+    timeout = setTimeout(() => {
+        dropdownContent.classList.remove('show'); // Hide dropdown when mouse leaves
+    }, 200); // Adjust delay time as needed (200ms here)
+});
+
+// Clear timeout when mouse enters the dropdown content
+dropdownContent.addEventListener('mouseenter', () => {
+    clearTimeout(timeout); // Clear timeout to keep dropdown open
+});
+
+// Check if the current page matches any of the dropdown links
+const dropdownLinks = dropdownContent.querySelectorAll('a');
+const currentPage = window.location.pathname.split('/').pop(); // Get the current page
+
+dropdownLinks.forEach(link => {
+    if (link.getAttribute('href') === currentPage) {
+        workButton.classList.add('active'); // Add active class to the button
+    }
+});
+
+// Check if the current page is the Work button's dropdown
+if (currentPage === 'historical-context.html' || currentPage === 'plot-summary.html' || currentPage === 'characters.html') {
+    workButton.classList.add('active'); // Add active class to the button
+} 
