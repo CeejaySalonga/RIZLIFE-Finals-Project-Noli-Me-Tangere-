@@ -1,0 +1,35 @@
+footer {
+    background: var(--light);
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 5%;
+}
+
+.footer-logo {
+    width: 100px;
+    flex-shrink: 0;
+}
+
+.footer-content p {
+    margin: 0;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .footer-content p {
+        text-align: center;
+    }
+}

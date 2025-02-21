@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Characters - Noli Me Tangere</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/characters.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <button class="navbar-toggle">
+                <span class="hamburger"></span>
+            </button>
+            <a href="index.html" class="navbar-brand txt-white fs-4 fw-bold">Noli Me Tángere</a>
+            <ul class="navbar-menu">
+                <li><a href="index.html" class="txt-white">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="txt-white">Work</a>
+                    <div class="dropdown-content">
+                        <a href="historical-context.html">Historical Context</a>
+                        <a href="plot-summary.html">Plot Summary</a>
+                        <a href="characters.html" class="active">Characters</a>
+                    </div>
+                </li>
+                <li><a href="#" class="txt-white">Analysis</a></li>
+                <li><a href="#" class="txt-white">Gallery</a></li>
+                <li><a href="#" class="txt-white">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="characters-content">
+        <div class="characters-section main-characters">
+            <h2>Main Characters</h2>
+            <div class="character-slider">
+                <button class="slider-arrow prev-arrow" id="main-prev">&#10094;</button>
+                <div class="character-cards" id="main-characters-cards">
+                    <!-- Cards will be inserted here dynamically -->
+                </div>
+                <button class="slider-arrow next-arrow" id="main-next">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="characters-section supporting-characters">
+            <h2>Supporting Characters</h2>
+            <div class="character-slider">
+                <button class="slider-arrow prev-arrow" id="support-prev">&#10094;</button>
+                <div class="character-cards" id="support-characters-cards">
+                    <!-- Cards will be inserted here dynamically -->
+                </div>
+                <button class="slider-arrow next-arrow" id="support-next">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <img class="footer-logo" src="assets/media/images/nu-logo.png" alt="Logo">
+            <p>All media used are property of their respective owners. This website is created solely for educational purposes and is a school project.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/character-data.js"></script>
+    <script src="assets/js/character-slider.js"></script>
+</body>
+</html>
