@@ -106,9 +106,12 @@ workButton.addEventListener('click', (e) => {
 
 // Close dropdown when mouse leaves the button
 workButton.addEventListener('mouseleave', () => {
-    timeout = setTimeout(() => {
-        dropdownContent.classList.remove('show'); // Hide dropdown when mouse leaves
-    }, 200); // Adjust delay time as needed (200ms here)
+    // Removed the timeout to prevent closing on mouse leave
+});
+
+// Ensure dropdown stays open when hovering over the dropdown content
+dropdownContent.addEventListener('mouseenter', () => {
+    clearTimeout(timeout); // Clear timeout to keep dropdown open
 });
 
 // Ensure dropdown closes when mouse leaves the dropdown content
@@ -116,11 +119,6 @@ dropdownContent.addEventListener('mouseleave', () => {
     timeout = setTimeout(() => {
         dropdownContent.classList.remove('show'); // Hide dropdown when mouse leaves
     }, 200); // Adjust delay time as needed (200ms here)
-});
-
-// Clear timeout when mouse enters the dropdown content
-dropdownContent.addEventListener('mouseenter', () => {
-    clearTimeout(timeout); // Clear timeout to keep dropdown open
 });
 
 // Check if the current page matches any of the dropdown links

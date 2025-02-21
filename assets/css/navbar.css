@@ -419,3 +419,18 @@
     width: 100%; /* Show underline when active */
     background-color: #000000; /* Change underline color when active */
 }
+
+/* Add this new rule to change the Work button color when the menu is active */
+.navbar-menu.active .dropdown > button {
+    color: black; /* Change text color to black */
+}
+
+/* Change underline to white when not scrolled */
+.navbar > .dropdown > button::after {
+    background-color: white; /* Default white underline */
+}
+
+/* Change underline to black when scrolled */
+.navbar.scrolled .dropdown > button::after {
+    background-color: #000000; /* Change underline color when scrolled */
+}
