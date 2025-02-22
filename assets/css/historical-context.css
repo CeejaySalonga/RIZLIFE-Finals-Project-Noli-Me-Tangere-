@@ -1,3 +1,7 @@
+body {
+    font-family: 'Spectral', serif; /* Apply the Spectral font */
+}
+
 .container {
     padding: 120px 20%;
 }

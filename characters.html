@@ -8,66 +8,70 @@
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/characters.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-content">
-            <button class="navbar-toggle">
-                <span class="hamburger"></span>
-            </button>
-            <a href="index.html" class="navbar-brand txt-white fs-4 fw-bold">Noli Me Tángere</a>
-            <ul class="navbar-menu">
-                <li><a href="index.html" class="txt-white">Home</a></li>
-                <li class="dropdown">
-                    <button>Work</button>
-                    <div class="dropdown-content">
-                        <a href="historical-context.html">Historical Context</a>
-                        <a href="plot-summary.html">Plot Summary</a>
-                        <a href="characters.html" class="active">Characters</a>
+    <div class="wrapper">
+        <nav class="navbar">
+            <div class="navbar-content">
+                <button class="navbar-toggle">
+                    <span class="hamburger"></span>
+                </button>
+                <a href="index.html" class="navbar-brand txt-white fs-4 fw-bold">Noli Me Tángere</a>
+                <ul class="navbar-menu">
+                    <li><a href="index.html" class="txt-white">Home</a></li>
+                    <li class="dropdown">
+                        <button>Work</button>
+                        <div class="dropdown-content">
+                            <a href="historical-context.html">Historical Context</a>
+                            <a href="plot-summary.html">Plot Summary</a>
+                            <a href="characters.html" class="active">Characters</a>
+                        </div>
+                    </li>
+                    <li><a href="#" class="txt-white">Analysis</a></li>
+                    <li><a href="#" class="txt-white">Gallery</a></li>
+                    <li><a href="#" class="txt-white">Resources</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="characters-content">
+            <!-- Move tab navigation above the character sections -->
+            <div class="tab-navigation">
+                <button class="tab-button active" id="main-tab">Main Characters</button>
+                <button class="tab-button" id="support-tab">Supporting Characters</button>
+            </div>
+
+            <div class="characters-section main-characters" id="main-characters">
+                <h2>Main Characters</h2>
+                <div class="character-slider">
+                    <button class="slider-arrow prev-arrow" id="main-prev">&#10094;</button>
+                    <div class="character-cards" id="main-characters-cards">
+                        <!-- Cards will be inserted here dynamically -->
                     </div>
-                </li>
-                <li><a href="#" class="txt-white">Analysis</a></li>
-                <li><a href="#" class="txt-white">Gallery</a></li>
-                <li><a href="#" class="txt-white">Resources</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <section class="characters-content">
-        <!-- Move tab navigation above the character sections -->
-        <div class="tab-navigation">
-            <button class="tab-button active" id="main-tab">Main Characters</button>
-            <button class="tab-button" id="support-tab">Supporting Characters</button>
-        </div>
-
-        <div class="characters-section main-characters" id="main-characters">
-            <h2>Main Characters</h2>
-            <div class="character-slider">
-                <button class="slider-arrow prev-arrow" id="main-prev">&#10094;</button>
-                <div class="character-cards" id="main-characters-cards">
-                    <!-- Cards will be inserted here dynamically -->
+                    <button class="slider-arrow next-arrow" id="main-next">&#10095;</button>
+                    <div class="pagination" id="main-pagination"></div>
+                    <div class="progress-text" id="main-progress-text">1/10</div>
                 </div>
-                <button class="slider-arrow next-arrow" id="main-next">&#10095;</button>
-                <div class="pagination" id="main-pagination"></div>
-                <div class="progress-text" id="main-progress-text">1/10</div>
             </div>
-        </div>
 
-        <div class="characters-section supporting-characters" id="support-characters" style="display: none;">
-            <h2>Supporting Characters</h2>
-            <div class="character-slider">
-                <button class="slider-arrow prev-arrow" id="support-prev">&#10094;</button>
-                <div class="character-cards" id="support-characters-cards">
-                    <!-- Cards will be inserted here dynamically -->
+            <div class="characters-section supporting-characters" id="support-characters" style="display: none;">
+                <h2>Supporting Characters</h2>
+                <div class="character-slider">
+                    <button class="slider-arrow prev-arrow" id="support-prev">&#10094;</button>
+                    <div class="character-cards" id="support-characters-cards">
+                        <!-- Cards will be inserted here dynamically -->
+                    </div>
+                    <button class="slider-arrow next-arrow" id="support-next">&#10095;</button>
+                    <div class="pagination" id="support-pagination"></div>
+                    <div class="progress-text" id="support-progress-text">1/10</div>
                 </div>
-                <button class="slider-arrow next-arrow" id="support-next">&#10095;</button>
-                <div class="pagination" id="support-pagination"></div>
-                <div class="progress-text" id="support-progress-text">1/10</div>
             </div>
-        </div>
-    </section>
-
-    <footer>
+        </section>
+    </div>
+    <footer class="footer">
         <div class="footer-content">
             <img class="footer-logo" src="assets/media/images/nu-logo.png" alt="Logo">
             <p>All media used are property of their respective owners. This website is created solely for educational purposes and is a school project.</p>

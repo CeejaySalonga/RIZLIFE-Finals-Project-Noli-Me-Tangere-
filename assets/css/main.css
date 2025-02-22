@@ -6,7 +6,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', serif;
     font-optical-sizing: auto;
     font-size: 16px;
 }
@@ -29,23 +28,27 @@ a {
 
 /* Base styles */
 body {
-    font-family: 'Times New Roman', serif;
+    font-family: 'Spectral', serif;
     line-height: 1.8;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Times New Roman', serif;
+    font-family: 'Spectral', serif;
 }
 
 p {
-    font-family: 'Times New Roman', serif;
+    font-family: 'Spectral', serif;
     font-size: 1.1rem;
     line-height: 1.8;
 }
 
 a {
-    font-family: 'Times New Roman', serif;
+    font-family: 'Spectral', serif;
     text-decoration: none;
+}
+
+button {
+    font-family: 'Spectral', serif;
 }
 
 /* Media query for mobile */
@@ -53,4 +56,20 @@ a {
     p {
         font-size: 1rem;
     }
+}
+
+/* Add this to the end of the file */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto; /* Pushes the footer to the bottom */
 }

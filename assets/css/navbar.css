@@ -77,10 +77,8 @@
     color: white;
     text-decoration: none;
     position: relative;
-    padding-bottom: 5px;
     font-size: 0.9rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
     line-height: 1;
 }
 
@@ -379,12 +377,9 @@
     border: none; /* Remove default button border */
     color: white; /* Match text color with other links */
     text-decoration: none; /* Remove underline by default */
-    font-size: 0.9rem; /* Match font size with other links */
     text-transform: uppercase; /* Make text uppercase */
-    letter-spacing: 1px; /* Match letter spacing */
     cursor: pointer; /* Change cursor to pointer */
     position: relative; /* Position relative for underline effect */
-    padding-bottom: 5px; /* Add padding to match other links */
 }
 
 /* Change button color to black when scrolled */

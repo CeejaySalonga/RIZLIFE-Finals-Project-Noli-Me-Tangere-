@@ -8,79 +8,83 @@
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-content">
-            <button class="navbar-toggle">
-                <span class="hamburger"></span>
-            </button>
-            <a href="index.html" class="navbar-brand txt-white fs-4 fw-bold">Noli Me Tángere</a>
-            <ul class="navbar-menu">
-                <li><a href="index.html" class="txt-white active">Home</a></li>
-                <li class="dropdown">
-                    <button>Work</button>
-                    <div class="dropdown-content">
-                        <a href="historical-context.html" class="txt-white">Historical Context</a>
-                        <a href="plot-summary.html" class="txt-white">Plot Summary</a>
-                        <a href="characters.html" class="txt-white">Characters</a>
-                    </div>
-                </li>
-                <li><a href="#" class="txt-white">Analysis</a></li>
-                <li><a href="#" class="txt-white">Gallery</a></li>
-                <li><a href="#" class="txt-white">Resources</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <section class="hero">
-        <video class="hero__background" autoplay muted loop>
-            <source src="assets/media/videos/luneta-park.mp4" type="video/mp4">
-            <!-- Fallback image if video fails to load -->
-            <img class="hero__background" src="assets/media/images/luneta-park.jpg" alt="Luneta Park">
-        </video>
-        <div class="hero-content">
-            <div class="hero-title">
-                <h1 class="fw-bold">Noli Me Tángere</h1>
-                <p>A Revolutionary Novel by Jose Rizal</p>
+    <div class="wrapper">
+        <nav class="navbar">
+            <div class="navbar-content">
+                <button class="navbar-toggle">
+                    <span class="hamburger"></span>
+                </button>
+                <a href="index.html" class="navbar-brand txt-white fs-4 fw-bold">Noli Me Tángere</a>
+                <ul class="navbar-menu">
+                    <li><a href="index.html" class="txt-white active">Home</a></li>
+                    <li class="dropdown">
+                        <button>Work</button>
+                        <div class="dropdown-content">
+                            <a href="historical-context.html" class="txt-white">Historical Context</a>
+                            <a href="plot-summary.html" class="txt-white">Plot Summary</a>
+                            <a href="characters.html" class="txt-white">Characters</a>
+                        </div>
+                    </li>
+                    <li><a href="#" class="txt-white">Analysis</a></li>
+                    <li><a href="#" class="txt-white">Gallery</a></li>
+                    <li><a href="#" class="txt-white">Resources</a></li>
+                </ul>
             </div>
-            <div class="hero-text">
-                <p class="fw-bold mb-3">
-                    Jose Rizal's ground-breaking book Noli Me Tangere revealed the inequities and excesses of Spanish colonial power in the Philippines. Its publication in 1887 sparked a national awakening and motivated Filipinos to pursue independence and reform.
-                </p>
-                <p class="fw-bold">
-                    Noli Me Tangere is an everlasting emblem of resistance and optimism because Rizal exposed the dishonesty and corruption of the ruling class via vivid storytelling and likable characters.
-                </p>
-            </div>
-        </div>
-    </section>
+        </nav>
 
-    <section class="content">
-        <div class="biography">
-            <img src="assets/media/images/jose-rizal.jpg" alt="Jose Rizal Portrait">
-            <div class="bio-text">
-                <h2 class="fs-5 fw-bold mb-3">Biography</h2>
-                <p class="mb-3">
-                    José Rizal was born in 1861 in Calamba, Laguna, and displayed remarkable intelligence from an early age. He pursued his studies in Manila before traveling to Europe, where his experiences broadened his perspective and deepened his commitment to exposing injustices in the Philippines.
-                </p>
-                <p>
-                    Rizal authored Noli Me Tangere and El Filibusterismo, two influential novels that ignited the revolutionary movement and became catalysts for reform. Despite advocating for peaceful change, he was detained by Spanish authorities. His execution in 1896 cemented his legacy as a national hero and a symbol of Filipino resistance.
-                </p>
+        <section class="hero">
+            <video class="hero__background" autoplay muted loop>
+                <source src="assets/media/videos/luneta-park.mp4" type="video/mp4">
+                <!-- Fallback image if video fails to load -->
+                <img class="hero__background" src="assets/media/images/luneta-park.jpg" alt="Luneta Park">
+            </video>
+            <div class="hero-content">
+                <div class="hero-title">
+                    <h1 class="fw-bold">Noli Me Tángere</h1>
+                    <p>A Revolutionary Novel by Jose Rizal</p>
+                </div>
+                <div class="hero-text">
+                    <p class="fw-bold mb-3">
+                        Jose Rizal's ground-breaking book Noli Me Tangere revealed the inequities and excesses of Spanish colonial power in the Philippines. Its publication in 1887 sparked a national awakening and motivated Filipinos to pursue independence and reform.
+                    </p>
+                    <p class="fw-bold">
+                        Noli Me Tangere is an everlasting emblem of resistance and optimism because Rizal exposed the dishonesty and corruption of the ruling class via vivid storytelling and likable characters.
+                    </p>
+                </div>
             </div>
-        </div>
-        
-        <div class="quotes">
-            <h2 class="fs-5 fw-bold mb-3">Quotes</h2>
-            <blockquote>
-                "The people do not complain because they have no voice; do not move because they are lethargic, and you say that they do not suffer because you have not seen their hearts bleed"
-            </blockquote>
-            <blockquote>
-                "Let us not ask for miracles, let us not ask for concern with what is good for the country of him who comes as a stranger to make his fortune and leave afterwards"
-            </blockquote>
-        </div>
-    </section>
+        </section>
 
-    <footer>
+        <section class="content">
+            <div class="biography">
+                <img src="assets/media/images/jose-rizal.jpg" alt="Jose Rizal Portrait">
+                <div class="bio-text">
+                    <h2 class="fs-5 fw-bold mb-3">Biography</h2>
+                    <p class="mb-3">
+                        José Rizal was born in 1861 in Calamba, Laguna, and displayed remarkable intelligence from an early age. He pursued his studies in Manila before traveling to Europe, where his experiences broadened his perspective and deepened his commitment to exposing injustices in the Philippines.
+                    </p>
+                    <p>
+                        Rizal authored Noli Me Tangere and El Filibusterismo, two influential novels that ignited the revolutionary movement and became catalysts for reform. Despite advocating for peaceful change, he was detained by Spanish authorities. His execution in 1896 cemented his legacy as a national hero and a symbol of Filipino resistance.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="quotes">
+                <h2 class="fs-5 fw-bold mb-3">Quotes</h2>
+                <blockquote>
+                    "The people do not complain because they have no voice; do not move because they are lethargic, and you say that they do not suffer because you have not seen their hearts bleed"
+                </blockquote>
+                <blockquote>
+                    "Let us not ask for miracles, let us not ask for concern with what is good for the country of him who comes as a stranger to make his fortune and leave afterwards"
+                </blockquote>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
         <div class="footer-content">
             <img class="footer-logo" src="assets/media/images/nu-logo.png" alt="Logo">
             <p>All media used are property of their respective owners. This website is created solely for educational purposes and is a school project.</p>

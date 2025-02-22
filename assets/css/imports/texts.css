@@ -110,3 +110,7 @@
 .fw-bolder {
     font-weight: bolder !important;
 }
+
+body {
+    font-family: 'Spectral', serif; /* Apply the Spectral font */
+}

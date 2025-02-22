@@ -1,3 +1,24 @@
+body {
+    font-family: 'Spectral', serif; /* Apply the Spectral font */
+}
+
+body:after {
+    content: '';
+    display: block;
+    background-image: url("../media/images/page-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    filter: blur(2px);
+}
+
 .characters-content {
     flex: 1; /* Allow this section to grow and fill available space */
     padding: 120px 5% 60px;
