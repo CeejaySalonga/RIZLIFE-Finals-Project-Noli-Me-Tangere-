@@ -100,7 +100,6 @@
 .bio-text p {
     text-align: justify;
     text-justify: inter-word;
-    color: #4a3129;
 }
 
 .quotes h2 {
@@ -113,7 +112,6 @@
     padding: 1.5rem;
     border-left: 4px solid #D4A048;
     font-style: italic;
-    color: #4a3129;
     background: rgba(212, 160, 72, 0.05);
     border-radius: 0 10px 10px 0;
 }

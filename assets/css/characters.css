@@ -1,22 +1,16 @@
-body {
-    font-family: 'Spectral', serif; /* Apply the Spectral font */
-}
-
 body:after {
     content: '';
     display: block;
-    background-image: url("../media/images/page-background.jpg");
-    background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover; /* Ensure the image covers the entire area */
     height: 100%;
-    margin-top: 0;
-    position: fixed;
+    position: fixed; /* Keep the background fixed */
     top: 0;
     left: 0;
     right: 0;
     z-index: -1;
     filter: blur(2px);
+    background-attachment: fixed; /* Prevent scrolling */
 }
 
 .characters-content {
@@ -36,12 +30,11 @@ body:after {
 .characters-section h2 {
     font-size: 2.5rem;
     margin-bottom: 0;
-    font-family: 'Times New Roman', serif;
-    color: white;
+    color: black;
     text-align: center;
     position: relative;
     padding: 1rem 3rem;
-    background-color: #931C19;
+    background-color: #e2a946;
     border-radius: 30px;
     width: fit-content;
     margin-left: 2rem;
@@ -106,7 +99,6 @@ body:after {
     font-size: 2rem;
     margin-bottom: 2rem;
     color: white;
-    font-family: 'Times New Roman', serif;
     line-height: 1.2;
 }
 
@@ -123,8 +115,8 @@ body:after {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #931C19;
-    color: white;
+    background-color: #e2a946;
+    color: black;
     border: none;
     width: 60px;
     height: 100px;
@@ -138,7 +130,7 @@ body:after {
 }
 
 .slider-arrow:hover {
-    background-color: #b22320;
+    background-color: #e2a9467b;
 }
 
 .prev-arrow {
@@ -366,7 +358,7 @@ body:after {
 .progress {
     height: 100%;
     width: 0;
-    background-color: #76c7c0; /* Change this color as needed */
+    background-color: #76c7c0;
     transition: width 0.3s ease;
 }
 
@@ -412,8 +404,8 @@ body:after {
 }
 
 .tab-button {
-    background-color: #931C19; /* Reddish background color */
-    color: #fff; /* White text color */
+    background-color: #E8D4A3; /* Reddish background color */
+    color: var(--dark); /* White text color */
     border: none;
     padding: 10px 20px;
     margin: 0 5px;
@@ -424,9 +416,11 @@ body:after {
 }
 
 .tab-button.active {
-    background-color: #b22320; /* Lighter reddish color for active tab */
+    background-color: #52221F;
+    color: white;
 }
 
 .tab-button:hover {
-    background-color: #a61b1b; /* Darker reddish color on hover */
+    background-color: #2F191B;
+    color: white;
 } 
