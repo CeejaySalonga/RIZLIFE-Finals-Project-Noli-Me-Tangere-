@@ -34,7 +34,13 @@
     </nav>
 
     <section class="characters-content">
-        <div class="characters-section main-characters">
+        <!-- Move tab navigation above the character sections -->
+        <div class="tab-navigation">
+            <button class="tab-button active" id="main-tab">Main Characters</button>
+            <button class="tab-button" id="support-tab">Supporting Characters</button>
+        </div>
+
+        <div class="characters-section main-characters" id="main-characters">
             <h2>Main Characters</h2>
             <div class="character-slider">
                 <button class="slider-arrow prev-arrow" id="main-prev">&#10094;</button>
@@ -42,10 +48,12 @@
                     <!-- Cards will be inserted here dynamically -->
                 </div>
                 <button class="slider-arrow next-arrow" id="main-next">&#10095;</button>
+                <div class="pagination" id="main-pagination"></div>
+                <div class="progress-text" id="main-progress-text">1/10</div>
             </div>
         </div>
 
-        <div class="characters-section supporting-characters">
+        <div class="characters-section supporting-characters" id="support-characters" style="display: none;">
             <h2>Supporting Characters</h2>
             <div class="character-slider">
                 <button class="slider-arrow prev-arrow" id="support-prev">&#10094;</button>
@@ -53,6 +61,8 @@
                     <!-- Cards will be inserted here dynamically -->
                 </div>
                 <button class="slider-arrow next-arrow" id="support-next">&#10095;</button>
+                <div class="pagination" id="support-pagination"></div>
+                <div class="progress-text" id="support-progress-text">1/10</div>
             </div>
         </div>
     </section>

@@ -29,17 +29,17 @@ const characterData = {
     supporting: [
         {
             name: "Captain Tiago (Don Santiago de los Santos)",
-            image: "assets/media/images/capitan-tiago.png",
+            image: "assets/media/images/kapitan-tiago.png",
             description: "One of the few native-born Filipinos with a lot of money is Capitan Tiago. He maintains tight relationships with prominent Catholics, even though he has no regard for religion, and he openly participates in racist taunts directed at his peers. Getting his daughter, María Clara, married off to a wealthy guy from a powerful family is his top priority. This is a major factor in his hasty decision to abandon his allegiance to Ibarra when he is called a subversive. He is eager to agree that Linares could be his daughter's new partner because he tends to favor beneficial social connections."
         },
         {
             name: "The Ensign",
-            image: "assets/media/images/the-ensign.png",
+            image: "assets/media/images/kapitan-heneral.png",
             description: "The unnamed commander of the San Diego Township's Civil Guard. A Spanish-born man, he and Father Salví are engaged in a vicious, ongoing struggle for control of the town. His curfews make it nearly difficult for San Diego residents to get to mass on time. He has a strong drinking habit and is married to Doña Consolación, with whom he often quarrels."
         },
         {
             name: "Doña Consolación",
-            image: "assets/media/images/dona-consolacion.png",
+            image: "assets/media/images/donya-consolacion.png",
             description: "Doña Consolación, the obnoxious spouse of The Ensign, is an elderly Filipina who acts as though she is incapable of speaking her native Tagalog language because she is ashamed of her background. She often makes decisions for her husband and has frequent arguments with him. She expects respect from others and is proud, even though she is considered as being extremely ugly."
         },
         {
@@ -59,42 +59,42 @@ const characterData = {
         },
         {
             name: "Doctor Tiburcio de Espadaña",
-            image: "assets/media/images/dr-tiburcio.png",
+            image: "assets/media/images/don-tiburcio-de-espadana.png",
             description: "The Spaniard, who goes by the name Doctor Tiburcio de Espadaña, is a hustler and a fraud. He was fired from his position as a customs officer soon after he arrived in the Philippines. He has no medical background, but after his wife pushes him to do so, he travels the countryside pretending to be a doctor and charging outrageous prices for his alleged services. After his plans are eventually discovered by his patients, he is compelled to move to a new place where he is virtually unknown. He eventually makes it to San Diego, where he continues his fictitious medical practice."
         },
         {
             name: "La Doctora Victorina de los Reyes de Espadaña",
-            image: "assets/media/images/dona-victorina.png",
+            image: "assets/media/images/donya-victorina-de-espadana.png",
             description: "A bold and tenacious Filipina social climber, is married to Tiburcio de Espadaña, a fake doctor. She uses gaudy makeup to maintain a youthful appearance even though she is long past her prime. In an attempt to elevate her social standing, she eagerly attempts to marry off her nephew to María Clara."
         },
         {
             name: "Lt. Guevara",
-            image: "assets/media/images/lt-guevara.png",
+            image: "assets/media/images/tenyente-guevarra.png",
             description: "He is the lieutenant of the Civil Guard and a good-hearted Spanish man who has a great deal of respect for both Crisóstomo Ibarra and the late Don Rafael. He is outspoken about his disapproval of Father Dámaso's authority and is among the few who publicly back the Ibarras. He tells Crisóstomo Ibarra about his father's destiny and how Father Damaso contributed to his demise."
         },
         {
             name: "Linares",
-            image: "assets/media/images/linares.png",
+            image: "assets/media/images/alfonso-linares.png",
             description: "A decent young Spanish man who was the nephew of Dr. de Espadaña. He has faked his qualifications in an attempt to advance in society, just like his uncle."
         },
         {
             name: "The Schoolmaster",
-            image: "assets/media/images/schoolmaster.png",
+            image: "assets/media/images/ang-guro.png",
             description: "He tells Crisóstomo Ibarra about the poor situation of San Diego's education after his father's death. Don Rafael houses a teacher, enabling him to appropriately attend to the duty of training children. He is not allowed to teach Spanish in the school since the friars keep a tight eye on the curriculum. Although the schoolmaster is appreciative of the Ibarra family, he does not believe he will succeed in enacting any long-term educational improvements."
         },
         {
             name: "Don Filipo (Filipo Lino)",
-            image: "assets/media/images/don-filipo.png",
+            image: "assets/media/images/don-filipo-lino.png",
             description: "Don Filipo Lino, the town's deputy mayor, is a member of the younger, less religiously constrained generation of influential people in San Diego. Seeing it as wasteful and a burden on the populace, he abhors the notion of lavishly spending money on the many feast days that punctuate the religious calendar. However, his remarks are ignored because he is merely the deputy mayor and the mayor is a fervent Catholic and the de facto spokesperson for the friars."
         },
         {
             name: "The Mayor",
-            image: "assets/media/images/the-mayor.png",
+            image: "assets/media/images/alperes.png",
             description: "The unidentified mayor of San Diego is a highly conservative individual who submits to the town's religious authorities and is only a marionette of the Catholic priesthood."
         },
         {
             name: "The Yellow Man",
-            image: "assets/media/images/yellow-man.png",
+            image: "assets/media/images/tarsilo.png",
             description: "An assassin who was assigned to kill the younger Ibarra's plan is foiled by the crafty Elias. Because of his persistently sallow, jaundiced complexion, he is known by this appellation."
         },
         {
@@ -104,17 +104,17 @@ const characterData = {
         },
         {
             name: "Father Sibyla",
-            image: "assets/media/images/father-sibyla.png",
+            image: "assets/media/images/padre-sibyla.png",
             description: "Father Sibyla is a priest in Manila's Binondo neighborhood who acts as a counterpoint to the wicked Father Salví and the otherwise largely corrupt Father Dámaso because he is calm and reasonable. At Ibarra's return party, Father Sibyla, a skilled and astute orator, clearly enjoys making fun of the arrogant Father Dámaso."
         },
         {
             name: "Aunt Isabel",
-            image: "assets/media/images/aunt-isabel.png",
+            image: "assets/media/images/tiya-isabel.png",
             description: "A relative of Capitan Tiago who, following the premature death of her mother, reared Maria Clara as her own kid."
         },
         {
             name: "Don Anastacio (Old Tasio)",
-            image: "assets/media/images/old-tasio.png",
+            image: "assets/media/images/pilosopo-tasyo.png",
             description: "The majority of the town thinks this elderly man, who formerly studied philosophy, is insane. Along with helping Ibarra's father before him, he respects Ibarra and offers him insightful counsel."
         }
     ]

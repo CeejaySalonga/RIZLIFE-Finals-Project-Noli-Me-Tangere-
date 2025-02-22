@@ -1,119 +1,59 @@
-.historical-content {
-    background-color: #2B1810;
-    color: white;
+.container {
+    padding: 120px 20%;
 }
 
-.historical-header {
-    padding: 120px 5% 60px;
-    max-width: 1400px;
-    margin: 0 auto;
+.container--brown {
+    background-color: #2F191B;
 }
 
-.historical-header h1 {
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    font-family: 'Times New Roman', serif;
+.container p {
+    color: #FFFFFF;
 }
 
-.historical-text {
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-.historical-details {
-    background-color: white;
-    color: #2B1810;
-    padding: 60px 5%;
-}
-
-.historical-details-content {
-    max-width: 1400px;
-    margin: 0 auto;
+.page-title {
+    margin-top: 5rem;
+    font-size: 2.5rem;
 }
 
 .historical-images {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 4rem;
+}
+
+.historical-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .historical-image {
-    flex: 0 1 400px;
-    text-align: center;
-}
-
-.historical-image img {
-    width: 100%;
+    width: 500px;
     height: 300px;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
-    object-position: center;
+    object-fit: contain;
 }
 
-.historical-image h3 {
+.historical-image-title {
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #2B1810;
 }
 
-.historical-image p {
-    line-height: 1.5;
-    color: #4a3129;
+.historical-image-description {
+    font-size: 1rem;
+    text-align: center;
+    max-width: 500px;
 }
 
-.additional-content {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem 0;
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 1rem 5%;
+    }
+
+    .historical-images {
+        flex-direction: column;
+    }
 }
-
-.additional-content h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #2B1810;
-    font-family: 'Times New Roman', serif;
-}
-
-.additional-content p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 1.5rem;
-    color: #4a3129;
-}
-
-@media (max-width: 768px) {
-    .historical-header {
-        padding: 100px 5% 40px;
-    }
-
-    .historical-header h1 {
-        font-size: 2.5rem;
-    }
-
-    .historical-text {
-        font-size: 1rem;
-    }
-
-    .additional-content h2 {
-        font-size: 1.75rem;
-    }
-
-    .additional-content p {
-        font-size: 1rem;
-    }
-
-    .historical-image {
-        flex: 0 1 300px;
-    }
-
-    .historical-image img {
-        height: 225px;
-    }
-} 
