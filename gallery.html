@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Characters - Noli Me Tángere</title>
+    <title>Gallery - Noli Me Tángere</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/characters.css">
+    <link rel="stylesheet" href="assets/css/gallery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
@@ -27,46 +27,37 @@
                         <div class="dropdown-content">
                             <a href="historical-context.html">Historical Context</a>
                             <a href="plot-summary.html">Plot Summary</a>
-                            <a href="characters.html" class="active">Characters</a>
+                            <a href="characters.html">Characters</a>
                         </div>
                     </li>
                     <li><a href="#" class="txt-white">Analysis</a></li>
-                    <li><a href="gallery.html" class="txt-white">Gallery</a></li>
+                    <li><a href="gallery.html" class="txt-white active">Gallery</a></li>
                     <li><a href="#" class="txt-white">Resources</a></li>
                 </ul>
             </div>
         </nav>
 
-        <section class="characters-content">
-            <!-- Move tab navigation above the character sections -->
-            <div class="tab-navigation">
-                <button class="tab-button active" id="main-tab">Main Characters</button>
-                <button class="tab-button" id="support-tab">Supporting Characters</button>
-            </div>
-
-            <div class="characters-section main-characters" id="main-characters">
-                <h2>Main Characters</h2>
-                <div class="character-slider">
-                    <button class="slider-arrow prev-arrow" id="main-prev">&#10094;</button>
-                    <div class="character-cards" id="main-characters-cards">
-                        <!-- Cards will be inserted here dynamically -->
+        <section class="container">
+            <p class="page-title fs-1 fw-bold mb-3 txt-center">Gallery</p>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <p id="gallery-item-title" class="gallery-item-title">Jose Rizal: The Visionary Behind the Novel</p>
+                    <div class="gallery-item-image">
+                        <div id="gallery-item-image-arrow-left" class="gallery-item-image-arrow-left">&#8592;</div>
+                        <img id="gallery-item-image" src="assets/media/images/gallery/jose-rizal.jpg" alt="Jose Rizal">
+                        <div id="gallery-item-image-arrow-right" class="gallery-item-image-arrow-right">&#8594;</div>
                     </div>
-                    <button class="slider-arrow next-arrow" id="main-next">&#10095;</button>
-                    <div class="pagination" id="main-pagination"></div>
-                    <div class="progress-text" id="main-progress-text">1/10</div>
+                    <p id="gallery-item-image-title" class="gallery-item-image-title fw-bold fs-4">Image Title</p>
+                    <p id="gallery-item-image-description" class="gallery-item-image-description txt-justify mb-5">Image Description</p>    
+                    <div class="pagination" id="gallery-pagination"></div>
+                    <div class="progress-text" id="gallery-progress-text">1/10</div>
                 </div>
-            </div>
-
-            <div class="characters-section supporting-characters" id="support-characters" style="display: none;">
-                <h2>Supporting Characters</h2>
-                <div class="character-slider">
-                    <button class="slider-arrow prev-arrow" id="support-prev">&#10094;</button>
-                    <div class="character-cards" id="support-characters-cards">
-                        <!-- Cards will be inserted here dynamically -->
-                    </div>
-                    <button class="slider-arrow next-arrow" id="support-next">&#10095;</button>
-                    <div class="pagination" id="support-pagination"></div>
-                    <div class="progress-text" id="support-progress-text">1/10</div>
+                <div class="gallery-tabs">
+                    <div class="gallery-tab active">Rizal</div>
+                    <div class="gallery-tab">Heritage</div>
+                    <div class="gallery-tab">Art</div>
+                    <div class="gallery-tab">Maps</div>
+                    <div class="gallery-tab">Legacy</div>
                 </div>
             </div>
         </section>
@@ -80,7 +71,7 @@
     </footer>
 
     <script src="assets/js/navbar.js"></script>
-    <script src="assets/js/character-data.js"></script>
-    <script src="assets/js/character-slider.js"></script>
+    <script src="assets/js/gallery-data.js"></script>
+    <script src="assets/js/gallery-slider.js"></script>
 </body>
 </html>

@@ -130,4 +130,16 @@ document.getElementById('support-tab').addEventListener('click', function() {
     document.getElementById('support-characters').style.display = 'block';
     this.classList.add('active');
     document.getElementById('main-tab').classList.remove('active');
-}); 
+});
+
+// Function to switch tabs
+function switchTab(tabId) {
+    const tabs = document.querySelectorAll('.characters-section');
+    tabs.forEach(tab => {
+        tab.style.display = tab.id === tabId ? 'block' : 'none';
+    });
+}
+
+// Event listeners for tab buttons
+document.getElementById('main-tab').addEventListener('click', () => switchTab('main-characters'));
+document.getElementById('support-tab').addEventListener('click', () => switchTab('support-characters')); 

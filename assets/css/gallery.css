@@ -1,0 +1,184 @@
+.container {
+    padding: 120px 10%;
+}
+
+.gallery-container {
+    margin: 0 auto;
+    color: white;
+    height: 800px;
+    width: 1000px;
+    position: relative;
+}
+
+.gallery-item {
+    background-color: #2b1a1a;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 10;
+    height: auto;
+    position: relative;
+    padding: 50px 20px;
+}
+
+.gallery-item-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.gallery-item-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.gallery-item-image img {
+    height: 400px;
+    width: 80%;
+    object-fit: scale-down;
+}
+
+.gallery-item-image-arrow-left,
+.gallery-item-image-arrow-right {
+    position: absolute;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 10px;
+    color: #fff;
+    background-color: #8b2323;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.gallery-item-image-arrow-left {
+    left: 20px;
+}
+
+.gallery-item-image-arrow-right {
+    right: 20px;
+}
+
+.gallery-item-image-arrow-left:hover,
+.gallery-item-image-arrow-right:hover {
+    background-color: #a52a2a;
+}
+
+.gallery-item-image-title,
+.gallery-item-image-description {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.gallery-item-image-description {
+    text-align: center;
+    margin: 10px 0;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.gallery-tabs {
+    position: absolute;
+    right: -200px;
+    top: 155px;
+    display: flex;
+    transform: rotate(90deg);
+}
+
+.gallery-tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: background-color 0.3s ease, z-index 0.3s ease, transform 0.3s ease;
+    height: 100px;
+    background-color: #b8860b;
+}
+
+.gallery-tab.active {
+    background-color: #8b2323;
+}
+
+.gallery-tab:hover {
+    filter: brightness(1.2);
+    transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 120px 5%;
+    }
+    
+    .gallery-item-image img {
+        max-height: 300px;
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.pagination-circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #e0e0e0; /* Default color */
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-circle.active {
+    background-color: #76c7c0; /* Active color */
+}
+
+.progress-text {
+    position: absolute;
+    bottom: 40px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white; /* Change this color as needed */
+    font-size: 1rem; /* Adjust font size as needed */
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+/* Add styles for the tab navigation */
+.tab-navigation {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.tab-button {
+    background-color: #E8D4A3; /* Reddish background color */
+    color: var(--dark); /* White text color */
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button.active {
+    background-color: #52221F;
+    color: white;
+}
+
+.tab-button:hover {
+    background-color: #2F191B;
+    color: white;
+}
