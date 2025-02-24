@@ -3,7 +3,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow: hidden; /* Prevent video from overflowing */
+    overflow: hidden;
 }
 
 .hero__background {
@@ -13,8 +13,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(40%); /* Darken the background more */
-    z-index: -1; /* Ensure video stays behind content */
+    filter: brightness(40%);
+    z-index: -1;
 }
 
 .hero-content {
@@ -55,7 +55,6 @@
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     text-align: justify;
-    text-justify: inter-word;
     font-family: 'Times New Roman', serif;
 }
 
@@ -92,19 +91,16 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.bio-text h2 {
-    margin-bottom: 1.5rem;
-    color: var(--dark);
-}
-
-.bio-text p {
-    text-align: justify;
-    text-justify: inter-word;
-}
-
+.bio-text h2,
 .quotes h2 {
     margin-bottom: 2rem;
     color: var(--dark);
+}
+
+.bio-text p,
+.quotes blockquote {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .quotes blockquote {

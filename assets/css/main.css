@@ -6,12 +6,17 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Spectral', serif;
     font-optical-sizing: auto;
     font-size: 16px;
 }
 
 body {
-    background-color: #F5F5F5;
+    background-color: #F3EBD7;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 ul {
@@ -23,48 +28,7 @@ a {
     color: inherit;
 }
 
-/* CSS Variables */
-:root {
-    --white: #ffffff;
-    --dark: #2B1810;
-    --gray-700: #4a3129;
-}
-
-/* Base styles */
-body {
-    height: 100vh;
-    margin: 0;
-    font-family: 'Spectral', serif;
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    flex: 1;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Spectral', serif;
-}
-
 p {
-    font-family: 'Spectral', serif;
     font-size: 1.1rem;
     line-height: 1.8;
-}
-
-a {
-    font-family: 'Spectral', serif;
-    text-decoration: none;
-}
-
-button {
-    font-family: 'Spectral', serif;
-}
-
-/* Media query for mobile */
-@media (max-width: 768px) {
-    p {
-        font-size: 1rem;
-    }
 }

@@ -1,20 +1,5 @@
-body:after {
-    content: '';
-    display: block;
-    background-repeat: no-repeat;
-    background-size: cover; /* Ensure the image covers the entire area */
-    height: 100%;
-    position: fixed; /* Keep the background fixed */
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    filter: blur(2px);
-    background-attachment: fixed; /* Prevent scrolling */
-}
-
 .characters-content {
-    flex: 1; /* Allow this section to grow and fill available space */
+    flex: 1;
     padding: 120px 5% 60px;
     max-width: 1400px;
     margin: 0 auto;
