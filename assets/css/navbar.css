@@ -105,7 +105,8 @@
     background-color: #000000;
 }
 
-.navbar a.active {
+.navbar a.active,
+.navbar button.active {
     font-weight: bold;
 }
 
