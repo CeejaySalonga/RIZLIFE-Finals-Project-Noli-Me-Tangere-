@@ -1,5 +1,5 @@
 .container {
-    padding: 120px 20%;
+    padding: 100px 20%;
 }
 
 .container--brown {
@@ -8,11 +8,6 @@
 
 .container p {
     color: #FFFFFF;
-}
-
-.page-title {
-    margin-top: 5rem;
-    font-size: 2.5rem;
 }
 
 .historical-images {
@@ -28,7 +23,7 @@
 }
 
 .historical-image {
-    width: 500px;
+    width: auto;
     height: 300px;
     object-fit: contain;
 }
@@ -43,6 +38,12 @@
     max-width: 500px;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
 /* Responsive adjustments */
 @media (max-width: 900px) {
     .page-title {
@@ -50,10 +51,14 @@
     }
 
     .container {
-        padding: 1rem 5%;
+        padding: 2rem 5%;
     }
 
     .historical-images {
+        flex-direction: column;
+    }
+
+    .flex-container {
         flex-direction: column;
     }
 }

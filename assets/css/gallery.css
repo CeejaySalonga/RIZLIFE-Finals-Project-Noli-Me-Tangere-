@@ -127,20 +127,19 @@
 
     .gallery-container {
         width: 100%;
-        padding-top: 60px;
     }
 
     .gallery-tabs {
-        position: absolute;
-        top: 0;
-        left: 0;
+        position: static;
         transform: none;
-        margin-bottom: 20px;
+        margin-top: 1rem;
+        gap: 1rem;
     }
 
     .gallery-tab {
-        transform: none;
-        font-size: 0.9rem;
+        font-size: 1.5rem;
+        height: 3.5rem;
+        border-radius: 10px;
     }
 
     .gallery-item {
@@ -188,7 +187,6 @@
 
     .gallery-tabs {
         flex-wrap: wrap;
-        gap: 5px;
     }
 }
 
