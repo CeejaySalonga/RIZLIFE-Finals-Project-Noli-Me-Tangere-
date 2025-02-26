@@ -55,3 +55,12 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
 }
+
+.list {
+    list-style-type: disc; 
+    list-style-position: inside; 
+}
+
+.list li {
+    font-size: 1.1rem;
+}
