@@ -8,13 +8,13 @@ const galleryData = {
         },
         {
             displayTitle: "José Rizal - National Hero of the Philippines",
-            title: "Rizal in Madrid",
+            title: "Rizal's Belongings",
             image: "assets/media/images/gallery/rizal_photo-2.jpg",
             description: "The books that Rizal actually utilized. He was clearly learning about Christianity and enjoyed reading and art."
         },
         {
             displayTitle: "José Rizal - National Hero of the Philippines",
-            title: "Rizal's Execution",
+            title: "Rizal's Execution Site",
             image: "assets/media/images/gallery/rizal_photo-3.jpg",
             description: "On the charge of political conspiracy, sedition, and rebellion against the Spanish government in the Philippines, Jose Rizal was executed by firing squad of native soldiers on December 30, 1896, at Bagumbayan (now Luneta or Rizal Park), Manila."
         },
@@ -40,9 +40,9 @@ const galleryData = {
     heritage: [
         {
             displayTitle: "Iconic Book Covers and Historic Context",
-            title: "The original Noli Me Tangere",
+            title: "The Original Cover of Noli Me Tángere",
             image: "assets/media/images/gallery/heritage_photo-1.jpg",
-            description: "José Rizal's Noli Me Tangere, which was written in Spanish and published in 1887, was a pivotal work in Philippine politics. Rizal presented a damning indictment of a society ruled by Spain, drawing on experience, nineteenth-century novel traditions, and European liberalism ideals."
+            description: "José Rizal's Noli Me Tángere, which was written in Spanish and published in 1887, was a pivotal work in Philippine politics. Rizal presented a damning indictment of a society ruled by Spain, drawing on experience, nineteenth-century novel traditions, and European liberalism ideals."
         },
         {
             displayTitle: "Iconic Book Covers and Historic Context",
@@ -245,7 +245,7 @@ const galleryData = {
     maps: [
         {
             displayTitle: "Maps",
-            title: "The map of the philippines during spanish colinization",
+            title: "The Map of the Philippines during Spanish Colonization",
             image: "assets/media/images/gallery/maps_photo-1.jpg",
             description: "The first and most significant scientific map of the Philippines is this amazing map of the Philippine archipelago, which was created by Jesuit Father Pedro Murillo Velarde (1696–1753) and published in Manila in 1734. The map depicts the maritime routes from Manila to Spain and to New Spain (Mexico and other Spanish territory in the New World), which at the time was a crucial element of the Spanish Empire."
         },
@@ -253,7 +253,7 @@ const galleryData = {
             displayTitle: "Maps",
             title: "Ang Bayan ng San Diego",
             image: "assets/media/images/gallery/maps_photo-2.jpg",
-            description: "In the tenth chapter of Noli Me Tangere, the City of San Diego is mentioned here which is also the title of the chapter. The chapter begins with Rizal's description of the town. The town is surrounded by farmland which is also close to lakes and rivers. That's why many people are amazed at this town because of the beautiful scenery here. While San Diego does not really exist, Rizal modeled the town after his province, Laguna. Laguna has been historically active in the past."
+            description: "In the tenth chapter of Noli Me Tángere, the City of San Diego is mentioned here which is also the title of the chapter. The chapter begins with Rizal's description of the town. The town is surrounded by farmland which is also close to lakes and rivers. That's why many people are amazed at this town because of the beautiful scenery here. While San Diego does not really exist, Rizal modeled the town after his province, Laguna. Laguna has been historically active in the past."
         },
         {
             displayTitle: "Maps",
@@ -273,19 +273,19 @@ const galleryData = {
             displayTitle: "The Novel’s Legacy: Impact and Influence",
             title: "Maria Clara Statue (Dumaguete)",
             image: "assets/media/images/gallery/legacy_photo-1.jpg",
-            description: "The park's focal point is a unique monument toDr. Jose Rizal. On one side of the entire plinth, he stands with Maria Clara is on the opposite side. On his journey to his exile in Dapitan, the good doctor Rizal stopped in Dumaguete. During his brief visit, he apparently enjoyed the town and its European vibe, particularly after enjoying breakfast one morning and listening to classical piano music drifting across the plaza."
+            description: "The park's focal point is a unique monument to Dr. Jose Rizal. On one side of the entire plinth, he stands with Maria Clara is on the opposite side. On his journey to his exile in Dapitan, the good doctor Rizal stopped in Dumaguete. During his brief visit, he apparently enjoyed the town and its European vibe, particularly after enjoying breakfast one morning and listening to classical piano music drifting across the plaza."
         },
         {
             displayTitle: "The Novel’s Legacy: Impact and Influence",
             title: "Famous TV Adaptation",
             image: "assets/media/images/gallery/legacy_photo-2.jpg",
-            description: "The Philippine historical fantasy television drama Maria Clara At Ibarra (or \"Maria Clara and Ibarra\") is based on the fiction books Noli Me Tangere and El Filibusterismo by Jose Rizal, the country's national hero. It was written by Suzette Doctolero, J-mee Katanyag, Brylle Tabora, Benson Logronio, Melchor Escarcha, and Zita Garganera, and it was directed by Zig Dulay with creative director Aloy Adlawan. October 3, 2022, marked the premiere of its pilot episode. Every weekday at 8:00 PM Philippine Standard Time (PHT), the GMA Network aired it. There were 105 episodes in the series, which ended on February 24, 2023."
+            description: "The Philippine historical fantasy television drama Maria Clara At Ibarra (or \"Maria Clara and Ibarra\") is based on the fiction books Noli Me Tángere and El Filibusterismo by Jose Rizal, the country's national hero. It was written by Suzette Doctolero, J-mee Katanyag, Brylle Tabora, Benson Logronio, Melchor Escarcha, and Zita Garganera, and it was directed by Zig Dulay with creative director Aloy Adlawan. October 3, 2022, marked the premiere of its pilot episode. Every weekday at 8:00 PM Philippine Standard Time (PHT), the GMA Network aired it. There were 105 episodes in the series, which ended on February 24, 2023."
         },
         {
             displayTitle: "The Novel’s Legacy: Impact and Influence",
-            title: "Original Manuscript For Noli Me Tangere",
+            title: "Original Manuscript For Noli Me Tángere",
             image: "assets/media/images/gallery/legacy_photo-3.jpg",
-            description: "These invaluable manuscripts of Noli Me Tangere and El Filibusterismo offer a rare glimpse into Rizal's creative process and revolutionary vision. Preserved at the Philippine National Library, they stand as treasured historical artifacts that continue to inspire scholars and patriots alike."
+            description: "These invaluable manuscripts of Noli Me Tángere and El Filibusterismo offer a rare glimpse into Rizal's creative process and revolutionary vision. Preserved at the Philippine National Library, they stand as treasured historical artifacts that continue to inspire scholars and patriots alike."
         }
     ]
 }; 
